@@ -1,0 +1,8 @@
+# Ignore artifacts:
+.idea
+.bundle
+.vscode
+android
+ios
+patches
+node_modules
