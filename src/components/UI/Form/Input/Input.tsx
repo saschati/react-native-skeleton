@@ -1,6 +1,6 @@
-import colors from '@/config/constants/colors'
 import React, { useImperativeHandle, useRef } from 'react'
-import { StyleSheet, Text, TextInput, TextInputProps, View, ViewProps } from 'react-native'
+import { Text, TextInput, TextInputProps, View, ViewProps } from 'react-native'
+import styles from './Input.style'
 
 export type InputHandle = {
   focus: () => void
@@ -33,20 +33,5 @@ const Input = React.forwardRef<InputHandle, InputProps>(
     )
   },
 )
-
-const styles = StyleSheet.create({
-  container: {},
-  input: {
-    borderBottomWidth: 1,
-    overflow: 'hidden',
-    padding: 0,
-    paddingTop: 10,
-    paddingBottom: 10,
-  },
-  error: {
-    marginTop: 4,
-    color: colors.READ,
-  },
-})
 
 export default Input

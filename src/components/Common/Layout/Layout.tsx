@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react'
 import LayoutProvider from './LayoutProvider'
-import { FlexStyle, StyleSheet, View } from 'react-native'
+import { FlexStyle, View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
+import styles from './Layout.style'
 
 export type LayoutSafeAreaInsetsType = 'all' | 'top' | 'bottom' | 'inline' | 'block' | 'none'
 
@@ -41,11 +42,5 @@ const Layout: React.FC<LayoutProps> = ({ children, safeAreaInsets = 'all' }): JS
     </LayoutProvider>
   )
 }
-
-const styles = StyleSheet.create({
-  layout: {
-    flex: 1,
-  },
-})
 
 export default Layout

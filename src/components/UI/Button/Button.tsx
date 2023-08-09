@@ -1,6 +1,6 @@
-import colors from '@/config/constants/colors'
 import React, { useMemo } from 'react'
-import { StyleSheet, Text, TouchableOpacity, TouchableOpacityProps, View, ViewProps } from 'react-native'
+import { Text, TouchableOpacity, TouchableOpacityProps, View, ViewProps } from 'react-native'
+import styles from './Button.style'
 
 type ButtonSize = 'small' | 'medium' | 'large' | 'custom'
 
@@ -42,20 +42,5 @@ const Button: React.FC<ButtonProps> = ({ title, size = 'small', height, style, .
     </TouchableOpacity>
   )
 }
-
-const styles = StyleSheet.create({
-  button: {
-    backgroundColor: colors.BLUE,
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingVertical: 8,
-    paddingHorizontal: 16,
-  },
-  title: {
-    color: colors.WHITE,
-    fontWeight: 'bold',
-  },
-})
 
 export default Button

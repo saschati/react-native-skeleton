@@ -30,6 +30,7 @@ module.exports = {
           '@/nativeModules': './src/nativeModules',
           '@/types': './src/types',
           '@/utils': './src/utils',
+          '@/styles': './src/styles',
         },
       },
     ],
